@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>カレンダー</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSSファイルのリンク -->
+</head>
+<body>
+    <div id="calendar">
+        <div class="header">
+            <!-- 年の変更を行うプルダウンメニュー -->
+            <select id="year-select"></select>
+            <!-- 月の変更を行うプルダウンメニューとボタン -->
+            <button id="prev-month">◀</button>
+            <select id="month-select"></select>
+            <button id="next-month">▶</button>
+        </div>
+        <table>
+            <!-- 曜日のヘッダー -->
+            <thead>
+                <tr>
+                    <th>日</th>
+                    <th>月</th>
+                    <th>火</th>
+                    <th>水</th>
+                    <th>木</th>
+                    <th>金</th>
+                    <th>土</th>
+                </tr>
+            </thead>
+            <!-- 日付が表示される部分 -->
+            <tbody id="calendar-body"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script> <!-- JavaScriptファイルのリンク -->
+</body>
+</html>
